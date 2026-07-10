@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Aquí van los estilos del header */
+.header {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+  border: 1px;
+}
+.header__nav {
+  text-align: end;
+  line-height: 50px;
+}
+.header__link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  padding: 5px 10px;
+  transition: all 400ms ease;
+  font-size: 16px;
+  display: inline-block;
+}
+.header__link:hover {
+  background-color: red;
+}
+
+.banner {
+  background-image: url("../img/image.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Selector descendente */
+.header .header__link {
+    font-weight: 600;
+}
+
+/* Selector por ID */
+#titulo {
+    color:rgb(0, 255, 200)
+}
+
+/* Selector combinado */
+a.header__link {
+    text-decoration: none;
+}
+
+/* Selector hijo directo */
+.header > .header__nav {
+    text-align: end;
+}
+
+/* Selector adyacente */
+h1 + h2 {
+    color: green;
+}
+
+/* Selector general de hermanos */
+h1 ~ p {
+    color: grey
+}
+
+/* Selector por atributo */
+a[href] {
+    color: white;
+}
